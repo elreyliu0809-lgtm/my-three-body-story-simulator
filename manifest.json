@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "candidate_id": "MT-STORY-SIMULATOR-GITHUB-R01",
+  "frozen_at": "2026-10-13T02:49:33.484903+00:00",
+  "entries": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "5A1E2ECCDB9CE1868488754E7C9FD848CFD5A44B85CF0EC78BAFC7D5B678656C",
+      "size_bytes": 847
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "4ACFD96B505BB9D3882346FDECFFC2F01351F69885A62A4818387597829D7976",
+      "size_bytes": 288
+    },
+    {
+      "path": "app.mjs",
+      "sha256": "0C5DCBC87BAECB96DFE52946EF659B3A30810BD4A4B95E13977F5AAAFD827D38",
+      "size_bytes": 11521
+    },
+    {
+      "path": "check.mjs",
+      "sha256": "26A06448A5CA17DE7DC1923BF70616D6F3DD877D12EDEA3B10197705D4F42B23",
+      "size_bytes": 1620
+    },
+    {
+      "path": "connection.mjs",
+      "sha256": "CFD0BEB15C963953AC6C666D847BD2CC43447B8948277378A5536C51C0C2DD29",
+      "size_bytes": 1678
+    },
+    {
+      "path": "index.html",
+      "sha256": "C0504E87F8B1408CA360541390B419CFAE05B4151BC046E744D34EC6AB933BC6",
+      "size_bytes": 5947
+    },
+    {
+      "path": "public-example.json",
+      "sha256": "B168459764EF0B1D4E059C38420970D49A87E650F184D16E86BF9875E5C6708F",
+      "size_bytes": 346
+    },
+    {
+      "path": "README.md",
+      "sha256": "E6F3CDB9DB1EF99A6D7E291B171B0EB09072FDE2134ABF9C11E3FDCAC95F320E",
+      "size_bytes": 950
+    },
+    {
+      "path": "save-storage.mjs",
+      "sha256": "1D44B89E0CE4E47CF035915F95A7044F2D0BA575D953D97011AC06A03D1C7148",
+      "size_bytes": 11574
+    },
+    {
+      "path": "save-ui.mjs",
+      "sha256": "AF95C2F22EECDF257F76E77738C6D20A1B11F852CD0503D88254351104DA6A79",
+      "size_bytes": 5393
+    },
+    {
+      "path": "src/geometry.mjs",
+      "sha256": "BB45011F870B9E9524601F8E639B6FEE8F706FEE9766F72C18C65762B2492AD9",
+      "size_bytes": 1547
+    },
+    {
+      "path": "src/replay.mjs",
+      "sha256": "E794AA4DE0B3E7181B2EB9858E1A53539802CC75C6BE02BE0556BE4700DEF0DF",
+      "size_bytes": 1382
+    },
+    {
+      "path": "styles.css",
+      "sha256": "D6571B0B1E29E76CAD189E611157A72577992BD73E0E362C2DE002A30EAD6A01",
+      "size_bytes": 4515
+    }
+  ],
+  "evidence_boundary": "Sanitized static candidate only; actual Pages/LIVE NOT_RUN"
+}

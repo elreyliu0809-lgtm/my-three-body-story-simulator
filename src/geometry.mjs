@@ -1,0 +1,7 @@
+export const mapping={neutral:{scale:1,width:2,word:'平静轮廓'},tense:{scale:.88,width:2,word:'收紧轮廓'},avoidant:{scale:.95,width:2,word:'偏转朝向'},caring:{scale:1.08,width:2,word:'轻微舒展'},angry:{scale:1.1,width:4,word:'轮廓增粗'},tired:{scale:.92,width:2,word:'低垂轮廓'}};
+// Player-visible gesture labels only; never change raw output, actor IDs,
+// observation/memory records, speech or author diagnostics.
+export function playerGestureText(text){return (text??'').replace(/\b(player|lin|officer)\b/g,id=>({player:'你',lin:'林',officer:'征募官'})[id]);}
+export function proposedGeometry(a,p){const v={...a,emotion:p.emotion??'neutral',gesture:p.gesture??''};const t=p.action;if(t?.type==='walk'){v.x=t.x;v.y=t.y;}if(t?.type==='leave'){v.x=70;v.y=350;v.left=true;}if(t?.type==='turn')v.facing=t.target;if(t?.type==='sit')v.seated=true;return v;}
+
+export function presentationDTO(d){const visible=d.range.ids.includes('player');const p=d.payload;const gesture=visible?p.gesture:(p.action?({walk:'走动',turn:'转身',handover:'递送抽象物品',sit:'坐下',leave:'离场',wait:'等待',refuse:'拒绝行动'})[p.action.type]:'');return {delivery_id:d.delivery_id,request_id:d.request_id,revision:d.revision,session_id:d.session_id,world_version:d.world_version,actor_version:d.actor_version,text_visible_to_player:visible,payload:{actor_id:p.actor_id,text:visible?p.text:'',action:p.action,gesture,emotion:p.emotion??'neutral'},range:{ids:d.range.ids,version:d.range.version,state:d.range.state}};}

@@ -1,0 +1,8 @@
+{
+  "state": "CANDIDATE_NOT_PUBLISHED",
+  "repository": "elreyliu0809-lgtm/my-three-body-story-simulator",
+  "page": "https://elreyliu0809-lgtm.github.io/my-three-body-story-simulator/",
+  "requires_local_temporary_backend": true,
+  "model_available": false,
+  "public_backend": null
+}
