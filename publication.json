@@ -1,8 +1,13 @@
 {
-  "state": "CANDIDATE_NOT_PUBLISHED",
+  "state": "PUBLISHED_STATIC_REALTIME_HALTED",
   "repository": "elreyliu0809-lgtm/my-three-body-story-simulator",
   "page": "https://elreyliu0809-lgtm.github.io/my-three-body-story-simulator/",
+  "deployment_run_id": 38339201425,
+  "deployment_conclusion": "success",
+  "static_manifest_sha256": "B49EB408A4C709B7D65B3AC5E350339678BF945D7F216F692E807EAF823D7268",
   "requires_local_temporary_backend": true,
   "model_available": false,
-  "public_backend": null
+  "backend": "STOPPED",
+  "reason": "Bounded real-model canary stopped on cleanup verification failure; no retry. Browser-local saves remain available.",
+  "observed_at": "2026-10-13T03:12:05.659639+00:00"
 }
